@@ -23,7 +23,7 @@ export default function Routes(){
                 <Route path ="/" exact component={Home}></Route>
                 <Route path ="/signup" exact component={Signup}></Route>
                 <Route path ="/signin" exact component={Signin}></Route>
-                <Route path ="/cart" exact component={Cart}></Route>
+                <PrivateRoute path ="/cart" exact component={Cart}></PrivateRoute>
                 <PrivateRoute path ="/user/dashboard" exact component={UserDashBoard}></PrivateRoute>
                 <AdminRoute  path ="/admin/dashboard" exact component={AdminDashBoard}></AdminRoute>
                 <AdminRoute  path ="/admin/create/category" exact component={Addcategory}></AdminRoute>
