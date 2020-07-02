@@ -49,7 +49,6 @@ const Cart = () =>{
     return(
         <Base title="Cart page" description="Ready to Checkout">
             <div className="row text-center">
-                <h1>Your device Cart</h1>
             <div className="col-6">{loadAllProducts()}</div>
             <div className="col-6"><StripeCheckout products={products} setReload={setReload} /></div>
             </div>
