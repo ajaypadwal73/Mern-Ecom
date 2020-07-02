@@ -50,7 +50,7 @@ const Cart = () =>{
         <Base title="Cart page" description="Ready to Checkout">
             <div className="row text-center">
             <div className="col-6">{loadAllProducts()}</div>
-            <div className="col-6"><StripeCheckout products={products} setReload={setReload} /></div>
+            {/* <div className="col-6"><StripeCheckout products={products} setReload={setReload} /></div> */}
             </div>
             
 
