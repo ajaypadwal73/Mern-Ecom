@@ -11,7 +11,7 @@ import StripeCheckout from './StripeCheckout';
 const Cart = () =>{
 
     const [products, setProducts] = useState([])
-    const[reload, setReload] = useState(false)
+    const[reload, setReload] = useState(true)
 
     useEffect(() => {
         setProducts(loadCart())
@@ -49,8 +49,8 @@ const Cart = () =>{
     return(
         <Base title="Cart page" description="Ready to Checkout">
             <div className="row text-center">
-            {/* <div className="col-6">{loadAllProducts()}</div>
-            <div className="col-6"><StripeCheckout products={products} setReload={setReload} /></div> */}
+            <div className="col-6">{loadAllProducts()}</div>
+            <div className="col-6"><StripeCheckout products={products} setReload={setReload} /></div>
             </div>
             
 
